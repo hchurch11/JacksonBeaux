@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>The Life of Jackson Beaux</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="javascript" type="javascript" href="index.js">
+</head>
+
+<body title="body">
+    <h1>Jackson Beaux</h1>
+
+    <div class="grid_items">
+        <div class="grid_item tab active">
+            <img src="/Users/heather/Coding-Projects/JacksonBeaux/Images/JB_PaddleBoard.jpg"
+                alt="JB_PaddleBoard.jpg"></img>
+            <div class="title">Adventure
+                <button><span>more info</span></button>
+            </div>
+            <div class="content">
+                <p> I'm usually not one to seek new things on my own, but MOM and DAD keep me on my toes and introduce
+                    me to so many fun things! Some of my favorites so far are: Paddle Boarding, Hiking, and Jumping on
+                    to Rocks and Trees!</p>
+                <p>Paddle Boarding: I was hesitant at first, but MOM and DAD encouraged me and eventually just threw me
+                    into it, LITERALLY. They took me out on the paddle board, and I didn't know what to think at first,
+                    so my balance was not good at all.</p>
+            </div>
+        </div>
+        <div class="grid_item tab">
+            <img src="/Users/heather/Coding-Projects/JacksonBeaux/Images/JB_LeashHeart.jpeg" alt="MOM_and_DAD"></img>
+            <div class="title"> MOM and DAD
+                <button><span>more info</span></button>
+            </div>
+            <div class="content">
+                <p>My MOM is the best mom a dog could have. She snuggles with me, gives me all the pets and scratchies,
+                    and always has treats for me. </p>
+                <p>My MOM used to hit these loud thumpers with tree branches for awhile, but now she spends most of her
+                    days staring at the thing that opens and shuts that sits on her desk. The open and shutter with the
+                    pictures on it also makes a lot of noise when she tromps her paws onto it.
+
+                </p>
+            </div>
+        </div>
+        <div class="grid_item tab">
+            <img src="/Users/heather/Coding-Projects/JacksonBeaux/Images/JB_Aspen.jpeg" alt="JB_Aspen"></img>
+            <div class="title"> Friends
+                <button><span>more info</span></button>
+            </div>
+            <div class="content">
+                <p>I would say that I have lots of friends, my best friends obviously being MOM and DAD. But, I also
+                    have friends that look and speak like me. </p>
+                <p>I meet new friends at what MOM and DAD call the "park." And sometimes I meet friends at "daycare." In
+                    both of these places, I love to run around and chase my friends. </p>
+            </div>
+        </div>
+    </div>
+    <script>$("button").click(function () {
+            $(this).parents(".grid_item").toggleClass("active");
+            $(this).parents(".grid_item").siblings(".grid_item").removeClass("active");
+        });</script>
+</body>
+
+</html>
