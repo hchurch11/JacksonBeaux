@@ -1,29 +1,18 @@
 body {
-    background: #BBDEFB;
-}
-
-.p {
-    color: #FFFFFF;
-}
-
-h1 {
-    color: #212121;
-}
-
-h2 {
-    color: #757575;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Schoolbell', cursive;
     line-height: 1.375em;
+    background: #BBDEFB;
 }
 
 h1 {
     text-align: center;
-    color: Teal;
+    color: #212121;
     padding-top: 2.5%;
     line-height: 1.25em;
+}
+
+h2 {
+    color: #757575;
 }
 
 h3, h4 {
@@ -39,7 +28,11 @@ div {
 .grid_items {
     margin: 7.5% 5%;
     color: #ffffff;
-    background-color: Teal;
+    background-color: #1976D2;
+}
+
+.grid_items p {
+    color: #FFC107;
 }
 
 .grid_item {
@@ -80,7 +73,7 @@ div {
         width: 36px;
         height: 36px;
         margin-top: -6px;
-        background-color: #ffffff;
+        background-color: #2196F3;
         border: none;
     }
     .grid_item button>span {
