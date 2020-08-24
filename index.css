@@ -1,5 +1,6 @@
 body {
     font-family: 'Schoolbell', cursive;
+    line-height: 1.375em;
     background: #BBDEFB;
 }
 
@@ -23,13 +24,13 @@ div {
     box-sizing: border-box;
 }
 
-.grid_items {
+.mainPhotos {
     margin: 7.5% 5%;
     color: #ffffff;
     background-color: #1976D2;
 }
 
-.grid_items p {
+.mainPhotos p {
     color: #FFC107;
 }
 
@@ -48,9 +49,9 @@ div {
 .grid_item>.title {
     position: absolute;
     top: 0;
-    padding-top: 52.5%;
+    padding-top: 10px;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -60,7 +61,7 @@ div {
 }
 
 @media only screen and (min-width: 786px) {
-    .grid_items {
+    .mainPhotos {
         display: grid;
         grid-template-columns: 33.333333% 33.333333% 33.333333%;
         grid-column-gap: 0;
@@ -79,9 +80,9 @@ div {
     }
     .grid_item button::before {
         content: "+";
-        font-size: 3em;
-        line-height: 0.625em;
-        color: #757575;
+        font-size: 40px;
+        line-height: .625em;
+        color: #ffffff;
     }
     .grid_item.active button::before {
         content: "-";
@@ -91,9 +92,6 @@ div {
         opacity: 0;
         width: 300%;
         transition: transform 0.3s ease-in-out 0s, opacity 0.3s ease-in-out 0.3s;
-    }
-    .grid_item:nth-child(3n + 2)>.content {
-        margin-left: -100%;
     }
     .grid_item:nth-child(3n)>.content {
         margin-left: -200%;
@@ -114,7 +112,7 @@ div {
         transform: translatey(-20%);
     }
     .grid_item>.title {
-        font-size: 1.125em;
+        font-size: 18px;
         transition: margin 0.3s ease-in-out;
     }
     .grid_item.active>.title {
@@ -124,6 +122,6 @@ div {
 
 @media only screen and (min-width: 981px) {
     .grid_item>.title {
-        font-size: 1.5em;
+        font-size: 24px;
     }
 }
